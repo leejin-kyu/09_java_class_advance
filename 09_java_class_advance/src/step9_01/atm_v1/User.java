@@ -11,7 +11,7 @@ public class User {
 		for (int i = 0; i < accCount; i++) {
 			acc[i].printOwnAccount();
 		}	
-		
+
 	}
 	
 }

@@ -9,6 +9,8 @@ public class ATM {
 	UserManager userManager = new UserManager();
 	int identifier = -1;
 	
+	
+	
 	void printMainMenu() {
 				
 		while (true) {
@@ -161,8 +163,6 @@ public class ATM {
 				logout();
 				break;
 			}
-			
 		}
-		
 	}	
 }
