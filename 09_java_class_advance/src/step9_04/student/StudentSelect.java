@@ -20,7 +20,6 @@ public class StudentSelect {
 		return null;
 	}
 	
-	
 	public boolean checkId(String id) {
 		
 		StudentVO studentVO = studentDAO.select(id);

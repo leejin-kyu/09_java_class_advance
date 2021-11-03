@@ -13,7 +13,7 @@ public class Main {
 			System.out.print("[1]추가 [2]수정 [3]삭제 [4]출력 [5]전체출력 [6]종료 : ");
 			int selectMenu = scan.nextInt();
 			
-			if (selectMenu == 1) {
+			if (selectMenu == 1) { //추가
 				
 				System.out.print("아이디를 입력하세요 : ");
 				String id = scan.next();
@@ -25,10 +25,10 @@ public class Main {
 				String name = scan.next();
 				
 				StudentInsert stInsert = controller.getInsert();
-				stInsert.insert(new StudentVO(id , num , name));
+				stInsert.insert(new StudentVO(id , num , name)); //아이디, 숫자,, 이름 추가!!
 				
 			}
-			else if (selectMenu == 2) {
+			else if (selectMenu == 2) { //수정
 				/*
 				 *  # 구현해 보시오.
 				 *  
@@ -45,7 +45,7 @@ public class Main {
 				 * 
 				 * */
 			}
-			else if (selectMenu == 4) {
+			else if (selectMenu == 4) {//출력
 				
 				System.out.print("아이디를 입력하세요 : ");
 				String id = scan.next();
@@ -53,14 +53,14 @@ public class Main {
 				StudentSelect stSelect = controller.getSelect();
 				StudentVO st = stSelect.select(id);
 				
-				if (st != null) st.printOneInfo();
+				if (st != null) st.printOneInfo(); //출력 메서드 id, name, pw 등
 			
 			}
-			else if (selectMenu == 5) {
+			else if (selectMenu == 5) { //전체출력
 				
 				StudentSelectAll stAll = controller.getSelectAll();
 				stAll.printAll();
-			
+				
 			}
 			else if (selectMenu == 6) {
 				

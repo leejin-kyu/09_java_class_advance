@@ -16,11 +16,11 @@ public class StudentVO {
 		System.out.println("id: " + this.id + " / num: " + this.num + " / name: " + this.name);
 	}
 	
-	public int getNum() {
+	public int getNum() { //입력의 의미
 		return num;
 	}
 	
-	public void setNum(int num) {
+	public void setNum(int num) { //출력의 의미
 		this.num = num;
 	}
 	
@@ -33,7 +33,7 @@ public class StudentVO {
 	}
 	
 	public String getName() {
-		return name;
+		return name; //메서드를 끝내고 원래  호출 했던 곳으로 되돌아 감. return 뒤에 따라오는 메서드 값 name을  메서드의 결과로 반환함.
 	}
 	
 	public void setName(String name) {

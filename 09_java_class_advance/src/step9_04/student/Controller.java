@@ -44,6 +44,5 @@ public class Controller {
 	
 	public void setSelectAll(StudentSelectAll selectAll) {
 		this.selectAll = selectAll;
-	}
-	
+	}	
 }

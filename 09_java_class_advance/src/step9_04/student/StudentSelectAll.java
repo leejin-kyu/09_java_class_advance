@@ -10,12 +10,10 @@ public class StudentSelectAll {
 		this.studentDAO = studentDAO;
 	}
 	
-	
 	public Map<String , StudentVO> allSelect(){
 		return studentDAO.getStudentDB();
 	}
-	
-	
+		
 	public void printAll() {
 		
 		Map<String , StudentVO> map = studentDAO.getStudentDB();
